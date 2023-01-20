@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
     <title>contador</title>
-   
+
 
 </head>
+
 <body>
-    <div>
+    <div id="conteudo">
         <h1>contador</h1>
-    <p id="numero">0</p>
-    <button onclick="aumentar()">mais</button>
-    <button onclick="diminuir()">menos</button>
-    <button onclick="zerar()">zerar</button>
+        <p id="numero">0</p>
+        <button onclick="aumentar()">mais</button>
+        <button onclick="diminuir()">menos</button>
+        <button onclick="zerar()">zerar</button>
     </div>
     <script>
         //estado da minha aplicação
@@ -24,29 +26,30 @@
 
         //alteradores de estado da aplicação
 
-       function aumentar() {
-        numero ++
-         mostrarNaTela()
-       }
-       
-       function diminuir() {
-        numero -- 
-        mostrarNaTela()
-       }
-       function zerar(){
-           numero = 0
-           mostrarNaTela()
-       }
+        function aumentar() {
+            numero++
+            mostrarNaTela()
+        }
 
-       //jogar o estado da aplicação na tela
-       function mostrarNaTela(){
-       const p = document.getElementById("numero")
-       p.innerText = numero
-       
-       }
-       //iniciar
-      
+        function diminuir() {
+            numero--
+            mostrarNaTela()
+        }
+
+        function zerar() {
+            numero = 0
+            mostrarNaTela()
+        }
+
+        //jogar o estado da aplicação na tela
+        function mostrarNaTela() {
+            const p = document.getElementById("numero")
+            p.innerText = numero
+
+        }
+        //iniciar
     </script>
 
 </body>
+
 </html>

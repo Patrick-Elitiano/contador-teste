@@ -1,23 +1,28 @@
-body{
-    
-        margin: 0;
-        box-sizing:border-box;
-        background-color: aqua;
-       
-        text-align: center;
+* {
 
-
-       
-    
+    margin: 0;
+    box-sizing: border-box;
 }
-*{
- 
-    border: 10px;
- border-width: 10px;
-   
-    border-color: brown;
-    margin: auto;
-    align-items: center;
+
+body {
+    display: grid;
+    background-color: black;
+    place-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    min-height: 100vh;
+
+}
+
+#conteudo {
+    background-color: rgba(255, 255, 255, 0.2);
     text-align: center;
+    padding: 50px 100px;
+    border-radius: 20px;
+    font-size: 20px;
+
 }
 
+#numero {
+    font-size: 150px;
+}
